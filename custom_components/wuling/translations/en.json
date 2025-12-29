@@ -1,0 +1,263 @@
+{
+  "config": {
+    "flow_title": "配置集成",
+    "step": {
+      "user": {
+        "title": "开始配置",
+        "description": "{tip}",
+        "data": {
+          "access_token": "登陆令牌",
+          "client_id": "client_id",
+          "client_secret": "client_secret"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "集成选项",
+        "description": "{tip}",
+        "data": {
+          "access_token": "登陆令牌",
+          "client_id": "client_id",
+          "client_secret": "client_secret"
+        }
+      }
+    }
+  },
+  "entity": {
+    "button": {
+      "auth_start": {
+        "name": "远程启动"
+      },
+      "search_car": {
+        "name": "双闪鸣笛"
+      }
+    },
+    "sensor": {
+      "battery": {
+        "name": "剩余电量"
+      },
+      "total_mileage": {
+        "name": "总里程"
+      },
+      "left_mileage": {
+        "name": "纯电续航"
+      },
+      "left_mileage_oil": {
+        "name": "燃油续航"
+      },
+      "total_hev_mileage": {
+        "name": "混动里程"
+      },
+      "oil_level": {
+        "name": "剩余油量"
+      },
+      "avgFuel": {
+        "name": "平均油耗",
+        "unit": "L/100km"
+      },
+      "battery_temp": {
+        "name": "电池温度"
+      },
+      "battery_voltage": {
+        "name": "电池电压"
+      },
+      "battery_health": {
+        "name": "电池健康"
+      },
+      "battery_status": {
+        "name": "电池状态"
+      },
+      "small_battery_voltage": {
+        "name": "电瓶电压"
+      },
+      "door_status": {
+        "name": "车门状态"
+      },
+      "tail_door_status": {
+        "name": "尾门锁状态"
+      },
+      "window_status": {
+        "name": "车窗状态"
+      },
+      "key_status": {
+        "name": "钥匙状态"
+      },
+      "gear_status": {
+        "name": "档位",
+        "state": {
+            "P": "泊车",
+            "D": "前进",
+            "N": "空档",
+            "R": "倒车"
+        }
+      },
+      "tire_temp": {
+        "name": "轮胎温度"
+      },
+      "tire_pressure_lf": {
+        "name": "胎压左前"
+      },
+      "tire_pressure_rf": {
+        "name": "胎压右前"
+      },
+      "tire_pressure_lr": {
+        "name": "胎压左后"
+      },
+      "tire_pressure_rr": {
+        "name": "胎压右后"
+      },
+      "tire_pressure_lf_status": {
+        "name": "左前胎压状态"
+      },
+      "tire_pressure_rf_status": {
+        "name": "右前胎压状态"
+      },
+      "tire_pressure_lr_status": {
+        "name": "左后胎压状态"
+      },
+      "tire_pressure_rr_status": {
+        "name": "右后胎压状态"
+      },
+      "local_tire_temp": {
+        "name": "本地轮胎温度"
+      },
+      "battery_voltage_check": {
+        "name": "电池电压（诊断）"
+      },
+      "battery_temp_check": {
+        "name": "电池温度（诊断）"
+      },
+      "battery_score": {
+        "name": "电池健康评分"
+      },
+      "engine_score": {
+        "name": "发动机健康评分"
+      },
+      "cdu_state": {
+        "name": "CD播放器状态"
+      },
+      "latitude": {
+        "name": "纬度"
+      },
+      "longitude": {
+        "name": "经度"
+      },
+      "battery_level": {
+        "name": "电池电量"
+      },
+      "vin": {
+        "name": "车辆识别码"
+      },
+      "name": {
+        "name": "车辆名称"
+      },
+      "plate": {
+        "name": "车牌号"
+      },
+      "color": {
+        "name": "车辆颜色"
+      },
+      "collect_time": {
+        "name": "数据采集时间"
+      },
+      "current_temperature": {
+        "name": "当前温度"
+      },
+      "target_temperature": {
+        "name": "目标温度"
+      }
+    },
+    "binary_sensor": {
+      "door_status": {
+        "name": "车门状态"
+      },
+      "door1_status": {
+        "name": "左前车门状态"
+      },
+      "door2_status": {
+        "name": "右前车门状态"
+      },
+      "door3_status": {
+        "name": "左后车门状态"
+      },
+      "door4_status": {
+        "name": "右后车门状态"
+      },
+      "door1_locked": {
+        "name": "左前车门锁状态"
+      },
+      "door2_locked": {
+        "name": "右前车门锁状态"
+      },
+      "door3_locked": {
+        "name": "左后车门锁状态"
+      },
+      "door4_locked": {
+        "name": "右后车门锁状态"
+      },
+      "tail_door_status": {
+        "name": "尾门锁状态"
+      },
+      "window_status": {
+        "name": "车窗状态"
+      },
+      "window1_status": {
+        "name": "左前车窗状态"
+      },
+      "window2_status": {
+        "name": "右前车窗状态"
+      },
+      "window3_status": {
+        "name": "左后车窗状态"
+      },
+      "window4_status": {
+        "name": "右后车窗状态"
+      },
+      "charging": {
+        "name": "充电状态"
+      },
+      "charging_check": {
+        "name": "充电状态（诊断）"
+      },
+      "plugging": {
+        "name": "充电枪状态"
+      },
+      "ac_status": {
+        "name": "空调状态"
+      },
+      "engine_power": {
+        "name": "电机功率"
+      },
+      "engine_temp": {
+        "name": "电机温度"
+      },
+      "abs": {
+        "name": "ABS状态"
+      },
+      "power_steering": {
+        "name": "转向助力"
+      },
+      "cc_state": {
+        "name": "定速巡航状态"
+      }
+    },
+    "lock": {
+      "door_lock": {
+        "name": "车锁"
+      }
+    },
+    "climate": {
+      "ac": {
+        "name": "空调"
+      }
+    },
+    "device_tracker": {
+      "location": {
+        "name": "位置"
+      }
+    }
+  }
+}
